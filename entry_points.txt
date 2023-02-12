@@ -1,0 +1,3 @@
+[console_scripts]
+mashup_yt = mashup_yt.cli:main
+
