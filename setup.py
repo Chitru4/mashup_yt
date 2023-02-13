@@ -6,8 +6,8 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
   name = 'mashup_yt',
-  packages = ['mashup_yt],
-  version = '0.0.1',      
+  packages = ['mashup_yt'],
+  version = '0.0.2',
   license='MIT',        
   description = 'This module creates a mashup of songs of your favorite singer with a single click.',
   long_description=long_description,
@@ -15,15 +15,17 @@ setup(
   author = 'Chitraksh Kumar',                   
   author_email = 'chitraksh24@gmail.com',      
   url = 'https://github.com/Chitru4/mashup_yt',
-  download_url = 'https://github.com/Chitru4/Mashup-Chitraksh-102017040/archive/refs/tags/Mashup.tar.gz',
-  keywords = ['MASHUP', 'YOUTUBE', 'PROJECT', 'UCS654','MUSIC','MP3'],   
+  download_url = 'https://github.com/Chitru4/mashup_yt/archive/refs/tags/mashup_yt.tar.gz',
+  keywords = ['MASHUP', 'YOUTUBE', 'PROJECT','MUSIC','MP3'],   
   install_requires=[           
           'pytube',
           'pydub',
+          'flask',
+          'requests'
       ],
   entry_points='''
     [console_scripts]
-    mashup_yt = mashup_yt.cli:main
+    mashup_yt = mashup_yt.app:main
   ''',
   classifiers=[
     'Development Status :: 3 - Alpha',      

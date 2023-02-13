@@ -1,7 +1,5 @@
 # Mashup Module by Chitraksh Kumar
 
-## Roll No. 102017040
-
 ## Description
 This module creates a mashup of songs of your favorite singer with a few steps from the command line.
 Select the singer, the number of songs and there durations and you will get a mashup of their most popular hits.
@@ -22,8 +20,14 @@ pip install mashup_yt
 ```
 
 ## Running the code
+Before running code make sure to add your smtp google account as well as it's app password.
+The password would be a 16 character string.
+This step is not needed if you intend to use only the cli interface and not the web app.
 ```
-mashup_yt "Sharry Mann" 20 20 102017040-output.mp3
+mashup_yt -p example@gmail.com secret_password
+```
+```
+mashup_yt "Marshmello" 20 20 out.mp3
 mashup_yt -w
 ```
 
